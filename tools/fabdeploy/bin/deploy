@@ -1,0 +1,3 @@
+#!/bin/bash
+
+fab -f /var/lib/fabdeploy/fabfile.py deploy_code
