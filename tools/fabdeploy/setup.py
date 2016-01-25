@@ -11,3 +11,4 @@ setup(
     data_files=[('/etc/fabdeploy', ['etc/deploy.cfg']),
                 ('/var/lib/fabdeploy',['lib/fabfile.py'])]
 )
+

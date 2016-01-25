@@ -82,3 +82,4 @@ function handleAnswer(){
         updateScore();
     })
 }
+
