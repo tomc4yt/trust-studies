@@ -77,6 +77,10 @@ function handleAnswer(){
         $(tile).empty().removeClass('unanswered').unbind().css('cursor','not-allowed');
         if ($(this).data('correct')){
             score += parseInt($(this).data('value'));
+        } else if ( score < parseInt($(this).data('value'))) {
+            score = 0;
+        } else {
+            score -= parseInt($(this).data('value'));
         }
         $('#question-modal').modal('hide');
         updateScore();
