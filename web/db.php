@@ -2,18 +2,18 @@
 
   class trustDB {
 
-   protected static $conn;
-   private $_db_user;
-   private $_db_pass;
-   private $_db_host;
-   private $_db;
+    protected static $conn;
+    private $_db_user;
+    private $_db_pass;
+    private $_db_host;
+    private $_db;
 
     function __construct() {
-         include 'config.php';
-         $this->_db_user = $DB_USER;
-         $this->_db_pass = $DB_PASS;
-         $this->_db_host = $DB_HOST;
-         $this->_db = $DB;
+      include 'config.php';
+      $this->_db_user = $DB_USER;
+      $this->_db_pass = $DB_PASS;
+      $this->_db_host = $DB_HOST;
+      $this->_db = $DB;
     }
 
     public function connect() {
