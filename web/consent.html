@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+<h2>Trust & Decision-Making Study - INFORMED CONSENT FORM</h2>
+<br>
+<hr>
+<br>
+
+<h3>RESEARCH PROCEDURES</h3>
+
+
+<p  style="font-size: 1.5em;" >
+This research is being conducted to understand the effects of psychological and environmental influences on 
+decision-making. If you agree to participate, you will be asked to complete some surveys about your personality 
+and participate in an online game similar to Jeopardy.  
+</p>
+<br>
+
+<h3>RISKS</h3>
+<br>
+
+<p  style="font-size: 1.5em;" >There are no foreseeable risks for participating in this research.</p>
+<br>
+
+<h3>BENEFITS</h3>
+<br>
+
+<p  style="font-size: 1.5em;" >There are no direct benefits to participants.<br>
+<br>
+
+
+<h3>CONFIDENTIALITY</h3>
+<br>
+
+<p  style="font-size: 1.5em;" >The data in this study will be confidential.  Through the use of your worker id, the researcher will be able to pay you for participation.  No personally identifiable information will be linked to your responses. Following data collection, all worker ids will be removed from the data and replaced by an alphanumeric code. While it is understood that no computer transmission can be perfectly secure, reasonable efforts will be made to protect the confidentiality of your transmission.
+<br>
+
+<h3>PARTICIPATION</h3>
+<br>
+
+
+<p  style="font-size: 1.5em;" >
+This study is open to participants age 18 and  older. This study will take approximately 1 hour to complete. Your participation is voluntary, and you may withdraw from the study at any time and for any reason. If you decide not to participate or if you withdraw from the study, there is no penalty or loss of benefits to which you are otherwise entitled. There are no costs to you or any other party. Upon completion of both the survey measures and the decision-making task, you will receive cash in the amount listed on the Mechanical Turk site; payment will be dispensed through Amazon.  You have the opportunity to earn a bonus of up to $2.00 for your level of performance on the tasks.
+</p>
+<br>
+
+<h3>CONTACT</h3>
+<br>
+
+<p  style="font-size: 1.5em;" >This research is being conducted by Simone Erchov under the guidance of Patrick McKnight, Ph.D., Psychology Department at George Mason University. The researchers may be reached at 703-993-8292 for questions or to report a research-related problem. You may contact the George Mason University Office of Integrity & Assurance at 703-993-4121 if you have questions or comments regarding your rights as a participant in the research.
+<br>
+
+This research has been reviewed according to George Mason University procedures governing your participation in this research. 
+</p>
+<br>
+
+<h3>CONSENT</h3>
+<br>
+
+<p  style="font-size: 1.5em;" >The George Mason University Institutional Review Board has waived the requirement for a signature on this consent form.</p>
+<br>
+
+
+<p  style="font-size: 1.5em;" >
+I have read this form and agree to participate in this study:</p>
+</p>  
+<br>
+
+
+
+
+<div  >
+    <label >
+        <input type="radio" id="agree1" name="group1" value="Agree" /> Agree
+    </label> 
+    <label >
+        <input type="radio" id="disagree1" name="group1" checked="checked" value="Disagree" /> Disagree
+    </label> 
+
+</div>
+<br /> 
+<p id = "warning1" style="color:red"></p>
+<div class="row">
+<div class="col-xs-2">
+<label for="email">Your Initials:</label>
+<input type="email" class="form-control" id="initials">
+</div>
+</div>
+</br>
+<a id="submit1" class="btn btn-primary" role="button">Submit</a>
+</br>
+</br>
+
+
+</div>           
+
+
+
+</body>
+
+<script type="text/javascript">
+$("#submit1").click(function () {
+    
+    var agreeradio = $("#agree1").is(":checked");
+    var initialsform = $("#initials").val();
+
+    if (initialsform.length == 0){
+        $( "#warning1" ).text("WARNING: PLEASE FILL OUT INITIALS BOX BELOW WITH YOUR INITIALS");
+        return;
+    }
+
+    if (agreeradio) {
+         $( "#submit1" ).attr( 'href', "instructions.html" );   
+    } else {
+        $( "#submit1" ).attr( 'href', "decline.html" );
+    }
+
+
+});
+    
+
+</script>
+
+
